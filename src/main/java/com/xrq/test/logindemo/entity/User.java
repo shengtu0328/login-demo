@@ -15,6 +15,8 @@ public class User {
 
     private String password;
 
+    private Integer permission;
+
 
     public User() {
     }
@@ -43,12 +45,22 @@ public class User {
         this.password = password;
     }
 
+
+    public Integer getPermission() {
+        return permission;
+    }
+
+    public void setPermission(Integer permission) {
+        this.permission = permission;
+    }
+
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", password='" + password + '\'' +
+                ", permission=" + permission +
                 '}';
     }
 }
